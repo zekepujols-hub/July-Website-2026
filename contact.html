@@ -36,27 +36,47 @@
 
     <main id="main-content" class="page-container signup-main" style="overflow: hidden;">
       <img src="https://gallery.eousercontent.com/b874b9e4-1806-11f1-a900-21017c1a5f14%2Fmedia-manager%2F1772656586480-zekepujolstveye-078.jpg" alt="Background Texture" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; z-index: 0;">
-      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.4); z-index: 1;"></div>
-      <div style="position: relative; z-index: 2; max-width: 500px; width: 100%; padding: 40px; text-align: center; color: white;">
-        <h1 style="font-family: 'Oswald', sans-serif; font-size: 48px; margin-bottom: 10px; text-transform: uppercase;">Stay Updated</h1>
-        <p style="font-size: 16px; margin-bottom: 30px;">with unreleased music, merch, and new show announcements</p>
+      <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); z-index: 1;"></div>
+      
+      <div style="position: relative; z-index: 2; max-width: 600px; width: 90%; padding: 70px 40px 50px 40px; text-align: center; color: var(--black); background: var(--cream); border: 4px solid var(--black); box-shadow: 12px 12px 0px var(--red); margin: 40px auto; overflow: hidden; display: flex; flex-direction: column; align-items: center;">
         
-        <form id="eo-signup-form" action="https://eomail5.com/form/6e37df48-1809-11f1-981a-e9c1d931ed89/subscribe" method="POST" style="display: flex; flex-direction: column; gap: 15px;">
-          <input type="email" id="eo-email" name="email" placeholder="Email Address" required style="padding: 15px; border: none; border-radius: 4px; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Inter', sans-serif;">
-          <input type="text" id="eo-city" name="field_4" placeholder="City & State" style="padding: 15px; border: none; border-radius: 4px; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Inter', sans-serif;">
-          <div style="display: none;">
-            <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="nope">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.4; background-image: url('https://gallery.eousercontent.com/b874b9e4-1806-11f1-a900-21017c1a5f14%2Fmedia-manager%2F1772656586480-zekepujolstveye-078.jpg'); background-size: cover; background-position: center; mix-blend-mode: multiply;"></div>
+        
+        <div style="position: absolute; top: 15px; left: 15px; z-index: 2; font-family: 'Courier Prime', monospace; color: var(--red); font-size: 16px; font-weight: bold; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;">
+          <span style="display: inline-block; width: 12px; height: 12px; background-color: var(--red); border-radius: 50%; animation: pulse 1.5s infinite;"></span> REC
+        </div>
+        
+        <div style="position: relative; z-index: 1; width: 100%;">
+          <h1 style="font-family: 'Anton', sans-serif; font-size: clamp(48px, 10vw, 64px); margin-bottom: 5px; text-transform: uppercase; color: var(--red); line-height: 1; text-shadow: 2px 2px 0px var(--black);">Stay Updated</h1>
+          <p style="font-size: 16px; margin-bottom: 35px; color: var(--red); font-weight: bold; font-family: 'Courier Prime', monospace; text-transform: uppercase; letter-spacing: -0.5px; border-bottom: 2px dashed var(--red); padding-bottom: 15px; display: inline-block;">with unreleased music, merch, and new show announcements</p>
+          
+          <form id="eo-signup-form" action="https://eomail5.com/form/6e37df48-1809-11f1-981a-e9c1d931ed89/subscribe" method="POST" style="display: flex; flex-direction: column; gap: 20px; width: 100%;">
+            <input type="email" id="eo-email" name="email" placeholder="EMAIL ADDRESS" required style="padding: 15px; border: 3px solid var(--black); border-radius: 0; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Courier Prime', monospace; background: rgba(255,255,255,0.9); font-weight: bold;">
+            <input type="text" id="eo-city" name="field_4" placeholder="CITY & STATE" style="padding: 15px; border: 3px solid var(--black); border-radius: 0; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Courier Prime', monospace; background: rgba(255,255,255,0.9); font-weight: bold;">
+            <div style="display: none;">
+              <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="nope">
+            </div>
+            <button type="submit" id="eo-submit-btn" style="padding: 15px; background: var(--red); color: var(--cream); border: 3px solid var(--black); font-size: 24px; font-weight: bold; cursor: pointer; text-transform: uppercase; font-family: 'Anton', sans-serif; letter-spacing: 2px; box-shadow: 6px 6px 0px var(--black); transition: transform 0.1s, box-shadow 0.1s; margin-top: 10px;" onmousedown="this.style.transform='translate(4px, 4px)'; this.style.boxShadow='2px 2px 0px var(--black)';" onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='6px 6px 0px var(--black)';">Subscribe</button>
+            <div id="eo-form-message" style="display:none; margin-top:10px; font-size:16px; font-weight: bold; font-family: 'Courier Prime', monospace; color: var(--red); background: var(--black); padding: 10px;"></div>
+          </form>
+          
+          <div style="margin-top: 40px; display: flex; justify-content: center; gap: 20px;">
+            <a href="https://www.instagram.com/zekepujols/" target="_blank" rel="noopener" style="transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/black/instagram.png" alt="Instagram" width="40" height="40" style="filter: drop-shadow(2px 2px 0px var(--red));"></a>
+            <a href="https://www.tiktok.com/@zekepujols" target="_blank" rel="noopener" style="transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/black/tiktok.png" alt="TikTok" width="40" height="40" style="filter: drop-shadow(2px 2px 0px var(--red));"></a>
+            <a href="https://www.facebook.com/people/Zeke-Pujols/61582439305386/" target="_blank" rel="noopener" style="transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/black/facebook.png" alt="Facebook" width="40" height="40" style="filter: drop-shadow(2px 2px 0px var(--red));"></a>
           </div>
-          <button type="submit" id="eo-submit-btn" style="padding: 15px; background: var(--red); color: #fff; border: none; border-radius: 4px; font-size: 16px; font-weight: bold; cursor: pointer; text-transform: uppercase; font-family: 'Inter', sans-serif;">Subscribe</button>
-          <div id="eo-form-message" style="display:none; margin-top:10px; font-size:14px;"></div>
-        </form>
-
-        <div style="margin-top: 30px; display: flex; justify-content: center; gap: 15px;">
-          <a href="https://www.instagram.com/zekepujols/" target="_blank" rel="noopener"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/white/instagram.png" alt="Instagram" width="32" height="32"></a>
-          <a href="https://www.tiktok.com/@zekepujols" target="_blank" rel="noopener"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/white/tiktok.png" alt="TikTok" width="32" height="32"></a>
-          <a href="https://www.facebook.com/people/Zeke-Pujols/61582439305386/" target="_blank" rel="noopener"><img src="https://gallery.eousercontent.com/tentacles/icons/v1/social-block/outlined-rounded/white/facebook.png" alt="Facebook" width="32" height="32"></a>
         </div>
       </div>
+      
+      <style>
+        @keyframes pulse {
+          0% { opacity: 1; }
+          50% { opacity: 0; }
+          100% { opacity: 1; }
+        }
+      </style>
+      
+       
 
       <script>
         document.getElementById('eo-signup-form').addEventListener('submit', function(e) {

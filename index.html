@@ -133,7 +133,91 @@
       </div>
     </footer>
 
-    <!-- EmailOctopus Popup Script -->
-    <script async src="https://eomail5.com/form/6e37df48-1809-11f1-981a-e9c1d931ed89.js" data-form="6e37df48-1809-11f1-981a-e9c1d931ed89"></script>
+    <!-- Custom Email Signup Modal -->
+    <div id="custom-signup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 9999; background: rgba(0,0,0,0.85); align-items: center; justify-content: center; backdrop-filter: blur(4px);">
+      <div style="position: relative; background: var(--cream); color: var(--black); max-width: 600px; width: 90%; border: 4px solid var(--black); box-shadow: 12px 12px 0px var(--red); display: flex; flex-direction: column; overflow: hidden;">
+        <button id="close-modal-btn" style="position: absolute; top: 15px; right: 15px; background: var(--red); border: 2px solid var(--black); font-size: 20px; font-weight: bold; cursor: pointer; color: var(--cream); z-index: 10; font-family: 'Courier Prime', monospace; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; box-shadow: 2px 2px 0px var(--black);">X</button>
+        
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 0; opacity: 0.4; background-image: url('https://gallery.eousercontent.com/b874b9e4-1806-11f1-a900-21017c1a5f14%2Fmedia-manager%2F1772656586480-zekepujolstveye-078.jpg'); background-size: cover; background-position: center; mix-blend-mode: multiply;"></div>
+        
+        <div style="position: absolute; top: 15px; left: 15px; z-index: 2; font-family: 'Courier Prime', monospace; color: var(--red); font-size: 16px; font-weight: bold; letter-spacing: 1px; display: flex; align-items: center; gap: 8px;">
+          <span style="display: inline-block; width: 12px; height: 12px; background-color: var(--red); border-radius: 50%; animation: pulse 1.5s infinite;"></span> REC
+        </div>
+        
+        <div style="padding: 70px 40px 50px 40px; position: relative; z-index: 1; text-align: center;">
+          <h2 style="font-family: 'Anton', sans-serif; font-size: clamp(48px, 10vw, 64px); margin-bottom: 5px; text-transform: uppercase; color: var(--red); line-height: 1; text-shadow: 2px 2px 0px var(--black);">Stay Updated</h2>
+          <p style="font-size: 16px; margin-bottom: 35px; color: var(--red); font-weight: bold; font-family: 'Courier Prime', monospace; text-transform: uppercase; letter-spacing: -0.5px; border-bottom: 2px dashed var(--red); padding-bottom: 15px; display: inline-block;">with unreleased music, merch, and new show announcements</p>
+          
+          <form id="eo-modal-form" action="https://eomail5.com/form/6e37df48-1809-11f1-981a-e9c1d931ed89/subscribe" method="POST" style="display: flex; flex-direction: column; gap: 20px;">
+            <input type="email" id="eo-modal-email" name="email" placeholder="EMAIL ADDRESS" required style="padding: 15px; border: 3px solid var(--black); border-radius: 0; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Courier Prime', monospace; background: rgba(255,255,255,0.9); font-weight: bold;">
+            <input type="text" id="eo-modal-city" name="field_4" placeholder="CITY & STATE" style="padding: 15px; border: 3px solid var(--black); border-radius: 0; font-size: 16px; width: 100%; box-sizing: border-box; font-family: 'Courier Prime', monospace; background: rgba(255,255,255,0.9); font-weight: bold;">
+            <div style="display: none;">
+              <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="nope">
+            </div>
+            <button type="submit" id="eo-modal-submit" style="padding: 15px; background: var(--red); color: var(--cream); border: 3px solid var(--black); font-size: 24px; cursor: pointer; text-transform: uppercase; font-family: 'Anton', sans-serif; letter-spacing: 2px; box-shadow: 6px 6px 0px var(--black); transition: transform 0.1s, box-shadow 0.1s; margin-top: 10px;" onmousedown="this.style.transform='translate(4px, 4px)'; this.style.boxShadow='2px 2px 0px var(--black)';" onmouseup="this.style.transform='translate(0, 0)'; this.style.boxShadow='6px 6px 0px var(--black)';">Subscribe</button>
+            <div id="eo-modal-message" style="display:none; margin-top:10px; font-size:16px; font-weight: bold; font-family: 'Courier Prime', monospace; color: var(--red); background: var(--black); padding: 10px;"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <style>
+      @keyframes pulse {
+        0% { opacity: 1; }
+        50% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    </style>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        if (!sessionStorage.getItem("zeke_popup_seen_v2")) {
+          setTimeout(() => {
+            const modal = document.getElementById("custom-signup-modal");
+            if (modal) {
+              modal.style.display = "flex";
+            }
+          }, 3000);
+        }
+
+        document.getElementById("close-modal-btn").addEventListener("click", function() {
+          document.getElementById("custom-signup-modal").style.display = "none";
+          sessionStorage.setItem("zeke_popup_seen_v2", "true");
+        });
+
+        document.getElementById('eo-modal-form').addEventListener('submit', function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const btn = document.getElementById('eo-modal-submit');
+          const msg = document.getElementById('eo-modal-message');
+          const formData = new FormData(form);
+          
+          btn.textContent = 'Sending...';
+          btn.disabled = true;
+          msg.style.display = 'none';
+          
+          fetch(form.action, {
+            method: 'POST',
+            body: formData,
+            mode: 'no-cors'
+          }).then(function() {
+            form.reset();
+            btn.textContent = 'Subscribe';
+            btn.disabled = false;
+            msg.textContent = 'Thanks for subscribing!';
+            msg.style.display = 'block';
+            setTimeout(() => {
+              document.getElementById("custom-signup-modal").style.display = "none";
+              sessionStorage.setItem("zeke_popup_seen_v2", "true");
+            }, 2000);
+          }).catch(function() {
+            btn.textContent = 'Subscribe';
+            btn.disabled = false;
+            msg.textContent = 'Something went wrong. Please try again.';
+            msg.style.display = 'block';
+          });
+        });
+      });
+    </script>
 </body>
 </html>
