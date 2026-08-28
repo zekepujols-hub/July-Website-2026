@@ -166,5 +166,39 @@
         </form>
       </div>
     </dialog>
+<script>
+(function(){
+  var WORKER_URL = "https://zeke-emailoctopus-relay.zekepujolsmgmt.workers.dev/";
+  document.querySelectorAll('form.signup-form').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var honeypot = form.querySelector('input[name^="hp"]');
+      if (honeypot && honeypot.value) { return; }
+      var formData = new FormData(form);
+      var submitBtn = form.querySelector('.signup-submit');
+      var originalText = submitBtn ? submitBtn.textContent : null;
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
+      fetch(WORKER_URL, { method: 'POST', body: formData })
+        .then(function(res){ return res.json().then(function(data){ return {ok: res.ok, data: data}; }); })
+        .then(function(result){
+          if (result.ok) {
+            form.reset();
+            alert('Thanks for signing up!');
+          } else {
+            console.error('Signup error:', result.data);
+            alert('Something went wrong. Please try again.');
+          }
+        })
+        .catch(function(err){
+          console.error('Signup error:', err);
+          alert('Something went wrong. Please try again.');
+        })
+        .finally(function(){
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        });
+    });
+  });
+})();
+</script>
 </body>
 </html>
