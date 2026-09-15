@@ -1,0 +1,132 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - link "ZEKE PUJOLS" [ref=e4] [cursor=pointer]:
+      - /url: index.html
+    - generic [ref=e5]:
+      - generic [ref=e6]: Issue 001
+      - generic [ref=e7]: Spanglish R&B
+      - generic [ref=e8]: Vol. I — 2026 Edition
+  - navigation "Primary" [ref=e9]:
+    - link "Home" [ref=e10] [cursor=pointer]:
+      - /url: index.html
+    - link "Music" [ref=e11] [cursor=pointer]:
+      - /url: music.html
+    - link "Videos" [ref=e12] [cursor=pointer]:
+      - /url: videos.html
+    - link "Live" [ref=e13] [cursor=pointer]:
+      - /url: tour.html
+    - link "Shop" [ref=e14] [cursor=pointer]:
+      - /url: merch.html
+    - link "About" [ref=e15] [cursor=pointer]:
+      - /url: about.html
+    - link "Sign Up" [ref=e16] [cursor=pointer]:
+      - /url: contact.html
+    - link "Community" [ref=e17] [cursor=pointer]:
+      - /url: community.html
+    - link "Vault" [ref=e18] [cursor=pointer]:
+      - /url: vault.html
+    - link "Contact" [ref=e19] [cursor=pointer]:
+      - /url: contact-us.html
+  - generic [ref=e20]:
+    - generic [ref=e21]: ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS
+    - button "Pause ticker" [ref=e22] [cursor=pointer]
+  - main [ref=e23]:
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: ★ Exclusive Cover Story ★
+          - heading "ZEKE PUJOLS" [level=1] [ref=e29]:
+            - text: ZEKE
+            - generic [ref=e30]: PUJOLS
+        - button "Pause video" [ref=e31] [cursor=pointer]
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - generic [ref=e34]: In This Issue
+          - generic [ref=e35]: MEETZEKEPUJOLS
+          - link "Join the List" [ref=e36] [cursor=pointer]:
+            - /url: contact.html
+        - generic [ref=e37]:
+          - link "★ Feature Who is Zeke Pujols Zeke on his Bronx roots, La Voz Kids, losing and regaining his voice, and the path from TikTok covers to his own music. p. 22 →" [ref=e38] [cursor=pointer]:
+            - /url: about.html
+            - generic [ref=e39]: ★ Feature
+            - generic [ref=e40]: Who is Zeke Pujols
+            - generic [ref=e41]: Zeke on his Bronx roots, La Voz Kids, losing and regaining his voice, and the path from TikTok covers to his own music.
+            - generic [ref=e42]: p. 22 →
+          - link "★ Interview In His Own Words Zeke discusses his debut EP “Can I Bother You?”, who his songs are about, and why he writes in both English and Spanish. p. 38 →" [ref=e43] [cursor=pointer]:
+            - /url: about.html#interview-section
+            - generic [ref=e44]: ★ Interview
+            - generic [ref=e45]: In His Own Words
+            - generic [ref=e46]: Zeke discusses his debut EP “Can I Bother You?”, who his songs are about, and why he writes in both English and Spanish.
+            - generic [ref=e47]: p. 38 →
+    - generic [ref=e49]:
+      - generic [ref=e50]: ★ Latest Release
+      - heading "Vices" [level=2] [ref=e51]
+      - img "Vices single artwork by Zeke Pujols" [ref=e52]
+      - generic [ref=e53]:
+        - link "Spotify" [ref=e54] [cursor=pointer]:
+          - /url: https://mikeosei.ffm.to/vices?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3
+        - link "Apple Music" [ref=e57] [cursor=pointer]:
+          - /url: https://mikeosei.ffm.to/vices?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3
+  - contentinfo [ref=e60]:
+    - generic [ref=e61]:
+      - generic [ref=e62]: ZEKE PUJOLS
+      - generic [ref=e64]:
+        - generic [ref=e65]: Navigate
+        - list [ref=e66]:
+          - listitem [ref=e67] [cursor=pointer]:
+            - link "Home" [ref=e68]:
+              - /url: index.html
+          - listitem [ref=e69] [cursor=pointer]:
+            - link "About" [ref=e70]:
+              - /url: about.html
+          - listitem [ref=e71] [cursor=pointer]:
+            - link "Music" [ref=e72]:
+              - /url: music.html
+          - listitem [ref=e73] [cursor=pointer]:
+            - link "Videos" [ref=e74]:
+              - /url: videos.html
+          - listitem [ref=e75] [cursor=pointer]:
+            - link "Live" [ref=e76]:
+              - /url: tour.html
+          - listitem [ref=e77] [cursor=pointer]:
+            - link "Shop" [ref=e78]:
+              - /url: merch.html
+          - listitem [ref=e79] [cursor=pointer]:
+            - link "Sign Up" [ref=e80]:
+              - /url: contact.html
+          - listitem [ref=e81] [cursor=pointer]:
+            - link "Community (Instagram, Discord, TikTok)" [ref=e82]:
+              - /url: community.html
+          - listitem [ref=e83] [cursor=pointer]:
+            - link "Vault" [ref=e84]:
+              - /url: vault.html
+          - listitem [ref=e85] [cursor=pointer]:
+            - link "Contact" [ref=e86]:
+              - /url: contact-us.html
+      - generic [ref=e87]:
+        - generic [ref=e88]: Connect
+        - list [ref=e89]:
+          - listitem [ref=e90] [cursor=pointer]:
+            - link "Instagram ↗" [ref=e91]:
+              - /url: https://www.instagram.com/zekepujols
+          - listitem [ref=e92] [cursor=pointer]:
+            - link "Spotify ↗" [ref=e93]:
+              - /url: https://open.spotify.com/artist/6DkjuCr4iY5W4ej8gO3MAG
+          - listitem [ref=e94] [cursor=pointer]:
+            - link "Apple Music ↗" [ref=e95]:
+              - /url: https://music.apple.com/us/artist/zeke-pujols/1495642810
+          - listitem [ref=e96] [cursor=pointer]:
+            - link "YouTube ↗" [ref=e97]:
+              - /url: https://www.youtube.com/@zekepujols
+          - listitem [ref=e98] [cursor=pointer]:
+            - link "TikTok ↗" [ref=e99]:
+              - /url: https://www.tiktok.com/@zekepujols
+          - listitem [ref=e100] [cursor=pointer]:
+            - link "SoundCloud ↗" [ref=e101]:
+              - /url: https://soundcloud.com/zekepujols
+          - listitem [ref=e102] [cursor=pointer]:
+            - link "Facebook ↗" [ref=e103]:
+              - /url: https://www.facebook.com/p/Zeke-Pujols-61582439305386/
+    - generic [ref=e104]: © 2026 Zeke Pujols — All Rights Reserved

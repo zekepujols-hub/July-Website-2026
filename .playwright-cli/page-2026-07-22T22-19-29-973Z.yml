@@ -1,0 +1,210 @@
+- generic [active] [ref=f17e1]:
+  - link "Skip to content" [ref=f17e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f17e3]:
+    - link "ZEKE PUJOLS" [ref=f17e4] [cursor=pointer]:
+      - /url: index.html
+    - button "Menu" [ref=f17e5] [cursor=pointer]
+  - navigation [ref=f17e6]:
+    - button [ref=f17e7] [cursor=pointer]: Close
+    - link [ref=f17e8] [cursor=pointer]:
+      - /url: index.html
+      - text: Home
+    - link [ref=f17e9] [cursor=pointer]:
+      - /url: music.html
+      - text: Music
+    - link [ref=f17e10] [cursor=pointer]:
+      - /url: videos.html
+      - text: Videos
+    - link [ref=f17e11] [cursor=pointer]:
+      - /url: tour.html
+      - text: Live
+    - link [ref=f17e12] [cursor=pointer]:
+      - /url: merch.html
+      - text: Shop
+    - link [ref=f17e13] [cursor=pointer]:
+      - /url: about.html
+      - text: About
+    - link [ref=f17e14] [cursor=pointer]:
+      - /url: contact.html
+      - text: Sign Up
+    - link [ref=f17e15] [cursor=pointer]:
+      - /url: community.html
+      - text: Community
+    - link [ref=f17e16] [cursor=pointer]:
+      - /url: vault.html
+      - text: Vault
+    - link [ref=f17e17] [cursor=pointer]:
+      - /url: contact-us.html
+      - text: Contact
+  - button "Close menu"
+  - generic [ref=f17e18]:
+    - generic [ref=f17e19]: ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS
+    - button "Pause ticker" [ref=f17e20] [cursor=pointer]
+  - main [ref=f17e21]:
+    - generic [ref=f17e22]:
+      - generic [ref=f17e23]: Music
+      - generic [ref=f17e25]: P.45
+    - heading "Zeke Pujols Music" [level=1] [ref=f17e26]
+    - generic [ref=f17e28]:
+      - generic [ref=f17e29]:
+        - link [ref=f17e30] [cursor=pointer]:
+          - /url: https://sndo.ffm.to/1yd60wv
+          - img "Can I Bother You? EP artwork" [ref=f17e31]
+        - generic [ref=f17e32]:
+          - link [ref=f17e33] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/1yd60wv
+            - heading "Can I Bother You?" [level=2] [ref=f17e34]
+          - link "STREAM / DOWNLOAD" [ref=f17e35] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/1yd60wv
+      - generic [ref=f17e36]:
+        - link [ref=f17e37] [cursor=pointer]:
+          - /url: https://sndo.ffm.to/ajjqbo1
+          - img "Who Can Blame Her single artwork" [ref=f17e38]
+        - generic [ref=f17e39]:
+          - link [ref=f17e40] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/ajjqbo1
+            - heading "Who Can Blame Her" [level=2] [ref=f17e41]
+          - link "STREAM / DOWNLOAD" [ref=f17e42] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/ajjqbo1
+      - generic [ref=f17e43]:
+        - link [ref=f17e44] [cursor=pointer]:
+          - /url: https://sndo.ffm.to/bvoo562
+          - img "Every Night single artwork" [ref=f17e45]
+        - generic [ref=f17e46]:
+          - link [ref=f17e47] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/bvoo562
+            - heading "Every Night" [level=2] [ref=f17e48]
+          - link "STREAM / DOWNLOAD" [ref=f17e49] [cursor=pointer]:
+            - /url: https://sndo.ffm.to/bvoo562
+      - generic [ref=f17e50]:
+        - link [ref=f17e51] [cursor=pointer]:
+          - /url: https://mikeosei.ffm.to/vices?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3
+          - img "Vices single artwork" [ref=f17e52]
+        - generic [ref=f17e53]:
+          - link [ref=f17e54] [cursor=pointer]:
+            - /url: https://mikeosei.ffm.to/vices?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3
+            - heading "Vices" [level=2] [ref=f17e55]
+          - link "STREAM / DOWNLOAD" [ref=f17e56] [cursor=pointer]:
+            - /url: https://mikeosei.ffm.to/vices?utm_source=ig&utm_medium=social&utm_content=link_in_bio&utm_id=97760_v0_s00_e0_tv3
+      - generic [ref=f17e57]:
+        - link [ref=f17e58] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujols/unconditional?ref=release
+          - img "Unconditional single artwork" [ref=f17e59]
+        - generic [ref=f17e60]:
+          - link [ref=f17e61] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/unconditional?ref=release
+            - heading "Unconditional" [level=2] [ref=f17e62]
+          - link "STREAM / DOWNLOAD" [ref=f17e63] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/unconditional?ref=release
+      - generic [ref=f17e64]:
+        - link [ref=f17e65] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujols/remind-me-you-exist?ref=release
+          - img "Remind Me You Exist single artwork" [ref=f17e66]
+        - generic [ref=f17e67]:
+          - link [ref=f17e68] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/remind-me-you-exist?ref=release
+            - heading "Remind Me You Exist" [level=2] [ref=f17e69]
+          - link "STREAM / DOWNLOAD" [ref=f17e70] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/remind-me-you-exist?ref=release
+      - generic [ref=f17e71]:
+        - link [ref=f17e72] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujols/ella-calcula--si-te-vas?ref=release
+          - img "Ella Calcula and Si Te Vas single artwork" [ref=f17e73]
+        - generic [ref=f17e74]:
+          - link [ref=f17e75] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/ella-calcula--si-te-vas?ref=release
+            - heading "Ella Calcula / Si Te Vas" [level=2] [ref=f17e76]
+          - link "STREAM / DOWNLOAD" [ref=f17e77] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/ella-calcula--si-te-vas?ref=release
+      - generic [ref=f17e78]:
+        - link [ref=f17e79] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujols/do-no-wrong?ref=release
+          - img "Do No Wrong single artwork" [ref=f17e80]
+        - generic [ref=f17e81]:
+          - link [ref=f17e82] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/do-no-wrong?ref=release
+            - heading "Do No Wrong" [level=2] [ref=f17e83]
+          - link "STREAM / DOWNLOAD" [ref=f17e84] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/do-no-wrong?ref=release
+      - generic [ref=f17e85]:
+        - link [ref=f17e86] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujols/came-from-la?ref=release
+          - img "Came From LA single artwork" [ref=f17e87]
+        - generic [ref=f17e88]:
+          - link [ref=f17e89] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/came-from-la?ref=release
+            - heading "Came From LA" [level=2] [ref=f17e90]
+          - link "STREAM / DOWNLOAD" [ref=f17e91] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujols/came-from-la?ref=release
+      - generic [ref=f17e92]:
+        - link [ref=f17e93] [cursor=pointer]:
+          - /url: https://distrokid.com/hyperfollow/zekepujolsanddurdnn/cant-be-alone?ref=release
+          - img "Can't Be Alone single artwork" [ref=f17e94]
+        - generic [ref=f17e95]:
+          - link [ref=f17e96] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujolsanddurdnn/cant-be-alone?ref=release
+            - heading "Can't Be Alone" [level=2] [ref=f17e97]
+          - link "STREAM / DOWNLOAD" [ref=f17e98] [cursor=pointer]:
+            - /url: https://distrokid.com/hyperfollow/zekepujolsanddurdnn/cant-be-alone?ref=release
+  - contentinfo [ref=f17e99]:
+    - generic [ref=f17e100]:
+      - generic [ref=f17e101]: ZEKE PUJOLS
+      - generic [ref=f17e103]:
+        - generic [ref=f17e104]: Navigate
+        - list [ref=f17e105]:
+          - listitem [ref=f17e106] [cursor=pointer]:
+            - link "Home" [ref=f17e107]:
+              - /url: index.html
+          - listitem [ref=f17e108] [cursor=pointer]:
+            - link "About" [ref=f17e109]:
+              - /url: about.html
+          - listitem [ref=f17e110] [cursor=pointer]:
+            - link "Music" [ref=f17e111]:
+              - /url: music.html
+          - listitem [ref=f17e112] [cursor=pointer]:
+            - link "Videos" [ref=f17e113]:
+              - /url: videos.html
+          - listitem [ref=f17e114] [cursor=pointer]:
+            - link "Live" [ref=f17e115]:
+              - /url: tour.html
+          - listitem [ref=f17e116] [cursor=pointer]:
+            - link "Shop" [ref=f17e117]:
+              - /url: merch.html
+          - listitem [ref=f17e118] [cursor=pointer]:
+            - link "Sign Up" [ref=f17e119]:
+              - /url: contact.html
+          - listitem [ref=f17e120] [cursor=pointer]:
+            - link "Community (Instagram, Discord, TikTok)" [ref=f17e121]:
+              - /url: community.html
+          - listitem [ref=f17e122] [cursor=pointer]:
+            - link "Vault" [ref=f17e123]:
+              - /url: vault.html
+          - listitem [ref=f17e124] [cursor=pointer]:
+            - link "Contact" [ref=f17e125]:
+              - /url: contact-us.html
+      - generic [ref=f17e126]:
+        - generic [ref=f17e127]: Connect
+        - list [ref=f17e128]:
+          - listitem [ref=f17e129] [cursor=pointer]:
+            - link "Instagram ↗" [ref=f17e130]:
+              - /url: https://www.instagram.com/zekepujols
+          - listitem [ref=f17e131] [cursor=pointer]:
+            - link "Spotify ↗" [ref=f17e132]:
+              - /url: https://open.spotify.com/artist/6DkjuCr4iY5W4ej8gO3MAG
+          - listitem [ref=f17e133] [cursor=pointer]:
+            - link "Apple Music ↗" [ref=f17e134]:
+              - /url: https://music.apple.com/us/artist/zeke-pujols/1495642810
+          - listitem [ref=f17e135] [cursor=pointer]:
+            - link "YouTube ↗" [ref=f17e136]:
+              - /url: https://www.youtube.com/@zekepujols
+          - listitem [ref=f17e137] [cursor=pointer]:
+            - link "TikTok ↗" [ref=f17e138]:
+              - /url: https://www.tiktok.com/@zekepujols
+          - listitem [ref=f17e139] [cursor=pointer]:
+            - link "SoundCloud ↗" [ref=f17e140]:
+              - /url: https://soundcloud.com/zekepujols
+          - listitem [ref=f17e141] [cursor=pointer]:
+            - link "Facebook ↗" [ref=f17e142]:
+              - /url: https://www.facebook.com/p/Zeke-Pujols-61582439305386/
+    - generic [ref=f17e143]: © 2026 Zeke Pujols — All Rights Reserved

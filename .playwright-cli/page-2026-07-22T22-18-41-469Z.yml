@@ -1,0 +1,163 @@
+- generic [active] [ref=f10e1]:
+  - link "Skip to content" [ref=f10e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f10e3]:
+    - link "ZEKE PUJOLS" [ref=f10e4] [cursor=pointer]:
+      - /url: index.html
+    - button "Menu" [ref=f10e5] [cursor=pointer]
+  - navigation [ref=f10e6]:
+    - button [ref=f10e7] [cursor=pointer]: Close
+    - link [ref=f10e8] [cursor=pointer]:
+      - /url: index.html
+      - text: Home
+    - link [ref=f10e9] [cursor=pointer]:
+      - /url: music.html
+      - text: Music
+    - link [ref=f10e10] [cursor=pointer]:
+      - /url: videos.html
+      - text: Videos
+    - link [ref=f10e11] [cursor=pointer]:
+      - /url: tour.html
+      - text: Live
+    - link [ref=f10e12] [cursor=pointer]:
+      - /url: merch.html
+      - text: Shop
+    - link [ref=f10e13] [cursor=pointer]:
+      - /url: about.html
+      - text: About
+    - link [ref=f10e14] [cursor=pointer]:
+      - /url: contact.html
+      - text: Sign Up
+    - link [ref=f10e15] [cursor=pointer]:
+      - /url: community.html
+      - text: Community
+    - link [ref=f10e16] [cursor=pointer]:
+      - /url: vault.html
+      - text: Vault
+    - link [ref=f10e17] [cursor=pointer]:
+      - /url: contact-us.html
+      - text: Contact
+  - button "Close menu"
+  - generic [ref=f10e18]:
+    - generic [ref=f10e19]: ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS ★ ZEKE PUJOLS — VICES OUT NOW ★ ALL PLATFORMS
+    - button "Pause ticker" [ref=f10e20] [cursor=pointer]
+  - main [ref=f10e21]:
+    - generic [ref=f10e22]:
+      - generic [ref=f10e23]: Vault
+      - generic [ref=f10e25]: P.114
+    - generic [ref=f10e26]:
+      - heading "The Zeke Pujols Vault" [level=1] [ref=f10e27]
+      - generic [ref=f10e28]: Enter the secret archive. Click around the studio to find exclusive behind-the-scenes and unreleased content.
+      - generic [ref=f10e29]:
+        - img "The Vault studio desk with hidden links" [ref=f10e30]
+        - link "Watch Can I Bother You on YouTube" [ref=f10e31] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=lTdt-2mDQYM&pp=0gcJCUwLAYcqIYzv
+        - link "Watch Ella Calcula on YouTube" [ref=f10e32] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=nhbOpP_kBaY
+        - link "Join the Instagram community" [ref=f10e33] [cursor=pointer]:
+          - /url: https://www.instagram.com/channel/AbZXSEfVqueOI13K/
+        - link "Join the Discord community" [ref=f10e34] [cursor=pointer]:
+          - /url: https://discord.gg/WWFaVg2WV
+        - link "Watch Remind Me You Exist on YouTube" [ref=f10e35] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=TeyAhUGQ3GI
+        - link "Watch Who Can Blame Her on YouTube" [ref=f10e36] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=1pC0OZUIXuY
+        - link "Watch Every Night on YouTube" [ref=f10e37] [cursor=pointer]:
+          - /url: https://www.youtube.com/watch?v=ZMVKc9iCv24
+        - link "Join the TikTok community" [ref=f10e38] [cursor=pointer]:
+          - /url: https://www.tiktok.com/@zekepujols
+        - link "Listen to Zeke Pujols on Apple Music" [ref=f10e39] [cursor=pointer]:
+          - /url: https://music.apple.com/us/artist/zeke-pujols/1495642810
+        - link "Listen to Zeke Pujols on Spotify" [ref=f10e40] [cursor=pointer]:
+          - /url: https://open.spotify.com/artist/6DkjuCr4iY5W4ej8gO3MAG
+        - link "Listen to Zeke Pujols on SoundCloud" [ref=f10e41] [cursor=pointer]:
+          - /url: https://soundcloud.com/zekepujols
+      - list "Vault links" [ref=f10e42]:
+        - listitem [ref=f10e43]:
+          - link "Can I Bother You" [ref=f10e44] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=lTdt-2mDQYM
+        - listitem [ref=f10e45]:
+          - link "Ella Calcula" [ref=f10e46] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=nhbOpP_kBaY
+        - listitem [ref=f10e47]:
+          - link "Remind Me You Exist" [ref=f10e48] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=TeyAhUGQ3GI
+        - listitem [ref=f10e49]:
+          - link "Who Can Blame Her" [ref=f10e50] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=1pC0OZUIXuY
+        - listitem [ref=f10e51]:
+          - link "Every Night" [ref=f10e52] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=ZMVKc9iCv24
+        - listitem [ref=f10e53]:
+          - link "Fan Communities" [ref=f10e54] [cursor=pointer]:
+            - /url: community.html
+        - listitem [ref=f10e55]:
+          - link "Spotify" [ref=f10e56] [cursor=pointer]:
+            - /url: https://open.spotify.com/artist/6DkjuCr4iY5W4ej8gO3MAG
+        - listitem [ref=f10e57]:
+          - link "Apple Music" [ref=f10e58] [cursor=pointer]:
+            - /url: https://music.apple.com/us/artist/zeke-pujols/1495642810
+        - listitem [ref=f10e59]:
+          - link "SoundCloud" [ref=f10e60] [cursor=pointer]:
+            - /url: https://soundcloud.com/zekepujols
+  - contentinfo [ref=f10e61]:
+    - generic [ref=f10e62]:
+      - generic [ref=f10e63]: ZEKE PUJOLS
+      - generic [ref=f10e65]:
+        - generic [ref=f10e66]: Navigate
+        - list [ref=f10e67]:
+          - listitem [ref=f10e68] [cursor=pointer]:
+            - link "Home" [ref=f10e69]:
+              - /url: index.html
+          - listitem [ref=f10e70] [cursor=pointer]:
+            - link "About" [ref=f10e71]:
+              - /url: about.html
+          - listitem [ref=f10e72] [cursor=pointer]:
+            - link "Music" [ref=f10e73]:
+              - /url: music.html
+          - listitem [ref=f10e74] [cursor=pointer]:
+            - link "Videos" [ref=f10e75]:
+              - /url: videos.html
+          - listitem [ref=f10e76] [cursor=pointer]:
+            - link "Live" [ref=f10e77]:
+              - /url: tour.html
+          - listitem [ref=f10e78] [cursor=pointer]:
+            - link "Shop" [ref=f10e79]:
+              - /url: merch.html
+          - listitem [ref=f10e80] [cursor=pointer]:
+            - link "Sign Up" [ref=f10e81]:
+              - /url: contact.html
+          - listitem [ref=f10e82] [cursor=pointer]:
+            - link "Community (Instagram, Discord, TikTok)" [ref=f10e83]:
+              - /url: community.html
+          - listitem [ref=f10e84] [cursor=pointer]:
+            - link "Vault" [ref=f10e85]:
+              - /url: vault.html
+          - listitem [ref=f10e86] [cursor=pointer]:
+            - link "Contact" [ref=f10e87]:
+              - /url: contact-us.html
+      - generic [ref=f10e88]:
+        - generic [ref=f10e89]: Connect
+        - list [ref=f10e90]:
+          - listitem [ref=f10e91] [cursor=pointer]:
+            - link "Instagram ↗" [ref=f10e92]:
+              - /url: https://www.instagram.com/zekepujols
+          - listitem [ref=f10e93] [cursor=pointer]:
+            - link "Spotify ↗" [ref=f10e94]:
+              - /url: https://open.spotify.com/artist/6DkjuCr4iY5W4ej8gO3MAG
+          - listitem [ref=f10e95] [cursor=pointer]:
+            - link "Apple Music ↗" [ref=f10e96]:
+              - /url: https://music.apple.com/us/artist/zeke-pujols/1495642810
+          - listitem [ref=f10e97] [cursor=pointer]:
+            - link "YouTube ↗" [ref=f10e98]:
+              - /url: https://www.youtube.com/@zekepujols
+          - listitem [ref=f10e99] [cursor=pointer]:
+            - link "TikTok ↗" [ref=f10e100]:
+              - /url: https://www.tiktok.com/@zekepujols
+          - listitem [ref=f10e101] [cursor=pointer]:
+            - link "SoundCloud ↗" [ref=f10e102]:
+              - /url: https://soundcloud.com/zekepujols
+          - listitem [ref=f10e103] [cursor=pointer]:
+            - link "Facebook ↗" [ref=f10e104]:
+              - /url: https://www.facebook.com/p/Zeke-Pujols-61582439305386/
+    - generic [ref=f10e105]: © 2026 Zeke Pujols — All Rights Reserved
