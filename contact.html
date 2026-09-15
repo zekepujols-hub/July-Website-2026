@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script>document.documentElement.classList.add('js')</script>
-    <link rel="icon" href="/favicon.png" type="image/png">
-    <link rel="preload" href="assets/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="preload" href="./assets/anton-400-BbqyLdY8.woff2" as="font" type="font/woff2" crossorigin>
     <title>Zeke Pujols Mailing List | Music, Merch &amp; Show Updates</title>
     <meta name="description" content="Join the Zeke Pujols mailing list for unreleased music, new merch, official videos, and live show announcements.">
     <link rel="canonical" href="https://zekepujols.com/contact.html">
@@ -13,9 +13,9 @@
     <meta property="og:title" content="Zeke Pujols Mailing List | Music, Merch &amp; Show Updates"><meta property="og:description" content="Join for unreleased music, merch, official videos, and live show announcements.">
     <meta property="og:url" content="https://zekepujols.com/contact.html"><meta property="og:image" content="https://zekepujols.com/assets/images/og/zeke-pujols.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Zeke Pujols Mailing List"><meta name="twitter:description" content="Get official music, merch, video, and show updates."><meta name="twitter:image" content="https://zekepujols.com/assets/images/og/zeke-pujols.jpg">
-    <link rel="stylesheet" href="css/styles.css">
-    <script type="module" src="js/main.js" defer></script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://zekepujols.com/contact.html#webpage","url":"https://zekepujols.com/contact.html","name":"Join the Zeke Pujols Mailing List","about":{"@id":"https://zekepujols.com/#zeke-pujols"}}</script>
+  <script type="module" crossorigin src="./assets/main-D8HvsG0Z.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-BwGAs-eg.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to content</a>
@@ -47,26 +47,20 @@
       <section class="signup-card" aria-labelledby="signup-title">
         <h1 id="signup-title">Join the Zeke Pujols Mailing List</h1>
         <p class="signup-lede">Get unreleased music, new merch, official videos, and live show announcements.</p>
-        <div class="emailoctopus-form-wrapper" data-form="6e37df48-1809-11f1-981a-e9c1d931ed89">
-          <p class="emailoctopus-success-message" style="color: var(--red); font-family: 'Anton', sans-serif; font-size: 28px; text-transform: uppercase; margin-top: 14px; text-align: center; line-height: 1.2;"></p>
-          <p class="emailoctopus-error-message" style="color: var(--red); font-family: 'Courier Prime', monospace; font-size: 13px; margin-top: 10px; text-align: center;"></p>
-          <form class="signup-form emailoctopus-form" action="https://eomail5.com/form/6e37df48-1809-11f1-981a-e9c1d931ed89/subscribe" method="POST">
-            <label for="signup-email">Email address
-              <input class="signup-input" type="email" id="signup-email" name="field_0" autocomplete="email" required>
-            </label>
-            <label for="signup-city">City and state
-              <input class="signup-input" type="text" id="signup-city" name="field_4" autocomplete="address-level2">
-            </label>
-            <div class="emailoctopus-form-row-consent">
-              <label class="signup-consent" for="signup-consent">
-                <input type="checkbox" id="signup-consent" name="consent" required>
-                <span>I agree to receive email updates from Zeke Pujols. I can unsubscribe at any time.</span>
-              </label>
-            </div>
-            <div class="emailoctopus-form-row-hp" aria-hidden="true" hidden><label>Leave this field empty <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="off"></label></div>
-            <button class="signup-submit" type="submit">Subscribe</button>
-          </form>
-        </div>
+        <form class="signup-form" action="https://zekepujols.eo.page/gkvwd" method="POST">
+          <label for="signup-email">Email address
+            <input class="signup-input" type="email" id="signup-email" name="field_0" autocomplete="email" required>
+          </label>
+          <label for="signup-city">City and state
+            <input class="signup-input" type="text" id="signup-city" name="field_4" autocomplete="address-level2">
+          </label>
+          <label class="signup-consent" for="signup-consent">
+            <input type="checkbox" id="signup-consent" name="consent" required>
+            <span>I agree to receive email updates from Zeke Pujols. I can unsubscribe at any time.</span>
+          </label>
+          <div class="honeypot" aria-hidden="true" hidden><label>Leave this field empty <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="off"></label></div>
+          <button class="signup-submit" type="submit">Subscribe</button>
+        </form>
       </section>
     </main>
 
@@ -109,5 +103,39 @@
 
       </div>
     </footer>
+<script>
+(function(){
+  var WORKER_URL = "https://zeke-emailoctopus-relay.zekepujolsmgmt.workers.dev/";
+  document.querySelectorAll('form.signup-form').forEach(function(form){
+    form.addEventListener('submit', function(e){
+      e.preventDefault();
+      var honeypot = form.querySelector('input[name^="hp"]');
+      if (honeypot && honeypot.value) { return; }
+      var formData = new FormData(form);
+      var submitBtn = form.querySelector('.signup-submit');
+      var originalText = submitBtn ? submitBtn.textContent : null;
+      if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Submitting...'; }
+      fetch(WORKER_URL, { method: 'POST', body: formData })
+        .then(function(res){ return res.json().then(function(data){ return {ok: res.ok, data: data}; }); })
+        .then(function(result){
+          if (result.ok) {
+            form.reset();
+            alert('Thanks for signing up!');
+          } else {
+            console.error('Signup error:', result.data);
+            alert('Something went wrong. Please try again.');
+          }
+        })
+        .catch(function(err){
+          console.error('Signup error:', err);
+          alert('Something went wrong. Please try again.');
+        })
+        .finally(function(){
+          if (submitBtn) { submitBtn.disabled = false; submitBtn.textContent = originalText; }
+        });
+    });
+  });
+})();
+</script>
 </body>
 </html>
