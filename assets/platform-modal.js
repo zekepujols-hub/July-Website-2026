@@ -4,6 +4,22 @@
 
   /* ─── MUSIC DATA (from Website Music Links - Sheet1.csv) ─── */
   var MUSIC = {
+    'stay-up': {
+      id: 'stay-up',
+      title: 'Stay Up',
+      type: 'Single',
+      img: '/assets/stay-up-cover.jpg',
+      platforms: {
+        Spotify:       { url: 'https://open.spotify.com/track/3zuN5zqHWOkNQ4MCfDyvit?si=4d1773ed13bb4efe', action: 'STREAM' },
+        'Apple Music': { url: 'https://music.apple.com/us/album/stay-up/6806233885?i=6806233886', action: 'STREAM' },
+        iTunes:        { url: 'https://music.apple.com/us/album/stay-up-single/6806233885', action: 'BUY' },
+        SoundCloud:    { url: 'https://on.soundcloud.com/dn5wPeOZQ29QhdDrsT', action: 'STREAM' },
+        Deezer:        { url: 'https://www.deezer.com/es/album/1064974091', action: 'STREAM' },
+        Tidal:         { url: 'https://tidal.com/album/556313496', action: 'STREAM' },
+        'Amazon Music':{ url: 'https://music.amazon.com/albums/B0HGXHST8C', action: 'STREAM' },
+        iHeartRadio:   { url: 'https://www.iheart.com/artist/zeke-pujols-40700381/songs/stay-up-428226710', action: 'STREAM' }
+      }
+    },
     'second-place': {
       id: 'second-place',
       title: 'Second Place',
@@ -189,17 +205,40 @@
     }
   };
 
-  /* ─── PLATFORM ICONS (SVG) ─── */
+  /* ─── PLATFORM ICONS ─── */
+  /* Tile spec: 36×36px, 8px radius, brand-color bg, white glyph at ~55-60% scale (22×22px) */
+  /* Brand colors: Spotify #1DB954 · SoundCloud #FF5500 · Deezer #A238FF · Amazon #25D1DA · iHeart #C6002B */
+  /* Apple Music, iTunes, Tidal kept as-is (already correct) */
+  var TILE = 'display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;flex-shrink:0;';
+  var GLYPH_IMG = 'width:22px;height:22px;object-fit:contain;display:block;';
+
   var ICONS = {
-    'Spotify': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#1DB954"/><path d="M17.9 10.9C14.7 9 9.35 8.8 6.3 9.75c-.5.15-1-.15-1.15-.6-.15-.5.15-1 .6-1.15 3.55-1.05 9.4-.85 13.1 1.35.45.25.6.85.35 1.3-.25.35-.85.5-1.3.25zm-.1 2.8c-.25.35-.7.5-1.05.25-2.7-1.65-6.8-2.15-9.95-1.15-.4.1-.85-.1-.95-.5-.1-.4.1-.85.5-.95 3.65-1.1 8.15-.55 11.25 1.35.3.15.45.65.2 1zm-1.2 2.75c-.2.3-.55.4-.85.2-2.35-1.45-5.3-1.75-8.8-.95-.35.1-.65-.15-.75-.45-.1-.35.15-.65.45-.75 3.8-.85 7.1-.5 9.7 1.1.35.15.4.55.25.85z" fill="#fff"/></svg>',
-    'Apple Music': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#FC3C44"/><path d="M16.5 3h-9A4.5 4.5 0 003 7.5v9A4.5 4.5 0 007.5 21h9a4.5 4.5 0 004.5-4.5v-9A4.5 4.5 0 0016.5 3zm-1.2 10.7c-.3.5-.8.7-1.3.7-.4 0-.7-.1-1.1-.3l-1.6-.9c-.1-.1-.2-.1-.3-.1H11v2.7c0 .4-.3.7-.7.7s-.7-.3-.7-.7V8.3c0-.4.3-.7.7-.7h1.6c.9 0 1.7.4 2.2 1.1.5.7.6 1.5.4 2.3l-.5 2zm-.3-2.6c.1-.5 0-1-.2-1.4-.3-.4-.7-.7-1.2-.7H11v2.6l1.6.9c.3.2.7.2.9.1.2-.1.4-.4.5-.7l.2-.8z" fill="#fff"/></svg>',
-    'iTunes': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#EA4CC0"/><path d="M16.5 3h-9A4.5 4.5 0 003 7.5v9A4.5 4.5 0 007.5 21h9a4.5 4.5 0 004.5-4.5v-9A4.5 4.5 0 0016.5 3zM12 17.5c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.5-6.5l-5 1.5V8.5l5-1.5v3.5z" fill="#fff"/></svg>',
-    'SoundCloud': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#FF5500"/><path d="M3.5 14.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V13c0-.8-.7-1.5-1.5-1.5S3.5 12.2 3.5 13v1.5zm3.5 1.5c0 .8.7 1.5 1.5 1.5V10c-.8 0-1.5.7-1.5 1.5V16zm3 0h.5c.8 0 1.5-.7 1.5-1.5v-5c0-.8-.7-1.5-1.5-1.5H10V16zm3 0h.5c.8 0 1.5-.7 1.5-1.5v-6c-.5-.3-1-.5-1.5-.5s-1 .2-1.5.5v6c0 .8.7 1.5 1.5 1.5zm3 0c.8 0 1.5-.7 1.5-1.5v-5.3c-.5-.5-1.1-.7-1.7-.7-.4 0-.8.1-1.1.3-.1.2-.2.4-.2.7V16h1.5z" fill="#fff"/></svg>',
-    'Deezer': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#FF6D00"/><path d="M8 9h2v2H8zm3 0h2v2h-2zm3 0h2v2h-2zM5 12h2v2H5zm3 0h2v2H8zm3 0h2v2h-2zm3 0h2v2h-2zM5 15h2v2H5zm3 0h2v2H8zm3 0h2v2h-2zm3 0h2v2h-2z" fill="#fff"/></svg>',
-    'Tidal': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#000"/><path d="M12 7.5L9.5 10l2.5 2.5 2.5-2.5L12 7.5zm-4 4L5.5 14 8 16.5l2.5-2.5L8 11.5zm8 0l-2.5 2.5 2.5 2.5 2.5-2.5L16 11.5z" fill="#fff"/></svg>',
-    'Pandora': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#3668FF"/><path d="M7 5h5.5c2.5 0 4.5 2 4.5 4.5S15 14 12.5 14H10v5H7V5zm3 6.5h2.5c.8 0 1.5-.7 1.5-1.5S13.3 8.5 12.5 8.5H10V11.5z" fill="#fff"/></svg>',
-    'Amazon Music': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#25D1DA"/><path d="M12 4C7.6 4 4 7.6 4 12s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 13.5c-3 0-5.5-2.5-5.5-5.5S9 6.5 12 6.5s5.5 2.5 5.5 5.5-2.5 5.5-5.5 5.5zm-1.5-7.5v4l3.5-2-3.5-2z" fill="#fff"/></svg>',
-    'iHeartRadio': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="6" fill="#C6002B"/><path d="M12 3.5c-1.9 0-3.5.7-4.7 1.9C6.1 6.6 5.5 8.2 5.5 10c0 1.8.7 3.4 1.8 4.6L12 20l4.7-5.4c1.1-1.2 1.8-2.8 1.8-4.6 0-1.8-.6-3.4-1.8-4.6C15.5 4.2 13.9 3.5 12 3.5zm0 9c-1.4 0-2.5-1.1-2.5-2.5S10.6 7.5 12 7.5s2.5 1.1 2.5 2.5S13.4 12.5 12 12.5z" fill="#fff"/></svg>'
+    /* ── Spotify — local SVG, white glyph on #1DB954 ── */
+    'Spotify': '<span aria-label="Listen on Spotify" role="img" style="' + TILE + 'background:#1DB954;"><img src="/assets/platform-icons/spotify.svg" alt="Listen on Spotify" style="' + GLYPH_IMG + '"></span>',
+
+    /* Apple Music — unchanged ✅ */
+    'Apple Music': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Listen on Apple Music"><defs><linearGradient id="pm-am" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FC5C7D"/><stop offset="1" stop-color="#F9344A"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#pm-am)"/><path fill="#fff" d="M17 6.27V15.5a2.5 2.5 0 1 1-1.5-2.29V8.86L9 10.54v6.21a2.5 2.5 0 1 1-1.5-2.29V9.47a1 1 0 0 1 .72-.96l7.5-2.14A1 1 0 0 1 17 7.33z" opacity=".95"/></svg>',
+
+    /* iTunes — unchanged ✅ */
+    'iTunes': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buy on iTunes"><defs><linearGradient id="pm-it" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E056D7"/><stop offset="1" stop-color="#B040C0"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#pm-it)"/><path fill="#fff" d="M17 6.27V15.5a2.5 2.5 0 1 1-1.5-2.29V8.86L9 10.54v6.21a2.5 2.5 0 1 1-1.5-2.29V9.47a1 1 0 0 1 .72-.96l7.5-2.14A1 1 0 0 1 17 7.33z" opacity=".95"/></svg>',
+
+    /* ── SoundCloud — local SVG, white glyph on #FF5500 ── */
+    'SoundCloud': '<span aria-label="Listen on SoundCloud" role="img" style="' + TILE + 'background:#FF5500;"><img src="/assets/platform-icons/soundcloud.svg" alt="Listen on SoundCloud" style="' + GLYPH_IMG + '"></span>',
+
+    /* ── Deezer — local SVG, white glyph on #A238FF ── */
+    'Deezer': '<span aria-label="Listen on Deezer" role="img" style="' + TILE + 'background:#A238FF;"><img src="/assets/platform-icons/deezer.svg" alt="Listen on Deezer" style="' + GLYPH_IMG + '"></span>',
+
+    /* Tidal — unchanged ✅ */
+    'Tidal': '<span aria-label="Listen on Tidal" role="img" style="' + TILE + 'background:#000;"><img src="/assets/platform-icons/tidal.png" alt="TIDAL" style="width:22px;height:22px;object-fit:contain;display:block;filter:invert(1);"></span>',
+
+    /* Pandora — blue P-shape logo */
+    'Pandora': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#3668FF"/><path fill="#fff" d="M7 5h5.6C15.6 5 18 7.4 18 10.4s-2.4 5.4-5.4 5.4H10v3H7V5zm3 2.5v5.4h2.6c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H10z"/></svg>',
+
+    /* ── Amazon Music — local SVG, white glyph on #25D1DA ── */
+    'Amazon Music': '<span aria-label="Listen on Amazon Music" role="img" style="' + TILE + 'background:#25D1DA;"><img src="/assets/platform-icons/amazon-music.svg" alt="Listen on Amazon Music" style="' + GLYPH_IMG + '"></span>',
+
+    /* ── iHeartRadio — local SVG, white glyph on #C6002B ── */
+    'iHeartRadio': '<span aria-label="Listen on iHeartRadio" role="img" style="' + TILE + 'background:#C6002B;"><img src="/assets/platform-icons/iheartradio.svg" alt="Listen on iHeartRadio" style="' + GLYPH_IMG + '"></span>'
   };
 
   /* ─── CSS INJECTION ─── */
@@ -301,6 +340,10 @@
       display: flex; align-items: center; justify-content: center;
     }
     .pm-icon svg { width: 36px; height: 36px; display: block; }
+    .pm-icon img { width: 100%; height: 100%; object-fit: contain; display: block; }
+    /* Icon tiles inserted directly (no .pm-icon wrapper) */
+    .pm-row > svg { width: 36px; height: 36px; display: block; flex-shrink: 0; border-radius: 8px; overflow: hidden; }
+    .pm-row > span[role="img"] { flex-shrink: 0; }
     .pm-name {
       flex: 1; font-size: 16px; font-weight: 600;
       font-family: 'Barlow Condensed', sans-serif;
@@ -418,7 +461,7 @@
       var iconSvg = ICONS[name] || '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#333"/></svg>';
 
       a.innerHTML = `
-        <div class="pm-icon">${iconSvg}</div>
+        ${iconSvg}
         <span class="pm-name">${name}</span>
         <span class="pm-pill">${p.action}</span>
         <span class="pm-arrow">↗</span>
@@ -449,6 +492,8 @@
     // Intercept all music-item clicks on music.html
     // Map each .music-item to a song ID based on the h2 title
     var titleToId = {
+      'Stay Up': 'stay-up',
+      'Second Place': 'second-place',
       'Can I Bother You?': 'can-i-bother-you',
       'Who Can Blame Her': 'who-can-blame-her',
       'Every Night': 'every-night',
@@ -490,7 +535,7 @@
       if (a.href && a.href.indexOf('partiful.com') !== -1) return;
       a.addEventListener('click', function(e) {
         e.preventDefault();
-        openModal('second-place');
+        openModal('stay-up');
       });
     });
 
@@ -498,7 +543,7 @@
     document.querySelectorAll('.latest-release-section img.latest-cover').forEach(function(img) {
       img.style.cursor = 'pointer';
       img.addEventListener('click', function() {
-        openModal('second-place');
+        openModal('stay-up');
       });
     });
   }
