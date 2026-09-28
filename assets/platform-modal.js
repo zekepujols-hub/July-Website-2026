@@ -13,6 +13,7 @@
         Spotify:       { url: 'https://open.spotify.com/track/3zuN5zqHWOkNQ4MCfDyvit?si=4d1773ed13bb4efe', action: 'STREAM' },
         'Apple Music': { url: 'https://music.apple.com/us/album/stay-up/6806233885?i=6806233886', action: 'STREAM' },
         iTunes:        { url: 'https://music.apple.com/us/album/stay-up-single/6806233885', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=q54ueKsOzGM&si=qI7oRjVxeZUCZqjK', action: 'STREAM' },
         SoundCloud:    { url: 'https://on.soundcloud.com/dn5wPeOZQ29QhdDrsT', action: 'STREAM' },
         Deezer:        { url: 'https://www.deezer.com/es/album/1064974091', action: 'STREAM' },
         Tidal:         { url: 'https://tidal.com/album/556313496', action: 'STREAM' },
@@ -29,6 +30,7 @@
         Spotify:      { url: 'https://open.spotify.com/album/3FBgGcr0jHLUCn7zF0Am6b', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/second-place-single/6793376554', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/second-place/6793376554?i=6793376555', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=ILNjzgyCLDQ&si=56mfkIT_fMbAMWZM', action: 'STREAM' },
         SoundCloud:   { url: 'https://on.soundcloud.com/wAl3lr4oHTOGhOWvQ4', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pfEM0Y94EAsWPg4u4hs', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/545285456/u', action: 'STREAM' },
@@ -45,6 +47,7 @@
         Spotify:      { url: 'https://open.spotify.com/album/2vS1uBfi6aLaLT2BnoOq8M?si=onBectX9Tk2-TrMC9kJSbw', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/can-i-bother-you/6796387375', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/can-i-bother-you/6796387375', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/playlist?list=OLAK5uy_lrlDGY11kv5p389gA8BbCDU9Sv2xnsgMM&si=_sy5FqKdGrXvi_Fb', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/sets/can-i-bother-you-1?si=9f1342f2385d47d888e03ff5aa1083e4&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34phVXcWU0Kcziy4nyx53', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/441727704/u', action: 'STREAM' },
@@ -62,6 +65,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/6c1FUhZrOo5HPWHf9P0tqG?si=09960c43cd7a4c7a', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/who-can-blame-her/1862363789?i=1862363790', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/who-can-blame-her-single/1862363789', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=1pC0OZUIXuY&si=IPELiLK5lpp-wJet', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/who-can-blame-her?si=3af28848820b4958abfb4dc94874d18f&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pi9jUzecT3L4mW0ZY0u', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/482606091/u', action: 'STREAM' },
@@ -79,6 +83,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/6OgWhg54f4CuXrnhzrNmL4?si=1880b7c96ef24070', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/every-night/6793358062?i=6793358063', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/every-night-single/6793358062', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=ZMVKc9iCv24&si=1fBTTgzhk0AwEM-A', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/every-night?si=8423decbdefb4e97bdf65f104cc29b25&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pipw6ITFezLIwsgTCK6', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/545271837/u', action: 'STREAM' },
@@ -96,6 +101,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/64o6y87RLB2E0NccrOODYq?si=27354be24ca2463a', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/vices-single/6781449165', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/vices-single/6781449165', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=BLo405SOXWU&si=H2kpOFXlRfdM2Exw', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34piAa5QCblLzQrQvNnyI', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/534105204/u', action: 'STREAM' },
         'Amazon Music':{ url: 'https://music.amazon.com/albums/B0H5NS2C27?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_vcQV069Fx53cTK6bPMwBJPqWf', action: 'STREAM' },
@@ -111,6 +117,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/2RYm7pYmcTX4ZJLUo5KsxZ?si=1071c7cb15a04f4b', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/song/unconditional/1878443700', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/unconditional-single/1878443699', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=6UfSCTexzqg&si=Ro2JTg_HHSTJnTl9', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/unconditional?si=02e2dd56d9eb4f6cb334d6e1fedffe8e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34piUoae0oAX3HQ0Rzar0', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/499361133/u', action: 'STREAM' },
@@ -128,6 +135,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/5S2cHiIclJfrXqtsqCgiEB?si=61f434d64234459f', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/song/remind-me-you-exist/1882226606', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/remind-me-you-exist-single/1882226605', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=mwKASY-2gH0&si=BrVYjdalUbliVpKa', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/remind-me-you-exist?si=48760bd440d64c03a76426558641d11a&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pjcFW6Ff0LZu8lGSExq', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/504119013/u', action: 'STREAM' },
@@ -145,6 +153,7 @@
         Spotify:      { url: 'https://open.spotify.com/album/2ITpSrCZGAAJobvY6NYrLC?si=8yNyKo7DRlGlL_rL8Bz4Iw', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/album/ella-calcula-si-te-vas-single/1887102291', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/ella-calcula-si-te-vas-single/1887102291', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/playlist?list=OLAK5uy_lMf4MvVpP374Aea6DgeBtVIVRDpH5JGKg&si=xyM_Ievk5R5LiFlO', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/sets/ella-calcula-si-te-vas-1?si=2b5f5c0cba1042158a052fe138e73326&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://www.deezer.com/es/album/944947271', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/509183913', action: 'STREAM' },
@@ -162,6 +171,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/4xdbHft6Nbd7wIw7V9TCH3?si=eb1b5b88bde2442b', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/song/do-no-wrong/1887139270', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/do-no-wrong-single/1887139269', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=w2fci13prak&si=MQbHuAMlk6fIvGhb', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/do-no-wrong-1?si=62e707e03ce64e84b4d5f888f3df502d&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pjsYMBzlK6m9Y9NC2Sk', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/509272943', action: 'STREAM' },
@@ -179,6 +189,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/775sY743gMX0rmSF2DYwF6?si=bda6f2a52fe849f3', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/song/came-from-la/1887045982', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/came-from-la-single/1887045981', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=Bsku-O-2D6g&si=PYaqhA3QAB8MU5-s', action: 'STREAM' },
         SoundCloud:   { url: 'https://soundcloud.com/zekepujols/came-from-la?si=8c2f1cd316c9482f8ca4ae7f7f777f13&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pjAkHGUEo5Ifd6Uwrty', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/509167455', action: 'STREAM' },
@@ -196,6 +207,7 @@
         Spotify:      { url: 'https://open.spotify.com/track/69IXJnDzBur3YeHrpz4V4x?si=73d3a864329d4342', action: 'STREAM' },
         'Apple Music':{ url: 'https://music.apple.com/us/song/cant-be-alone/1868245133', action: 'STREAM' },
         iTunes:       { url: 'https://music.apple.com/us/album/cant-be-alone-single/1868245132', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=VyFbvB2Ynig&si=WyZNih3lhWdWaQ7r', action: 'STREAM' },
         Deezer:       { url: 'https://link.deezer.com/s/34pk3ZgYyR30cTAPgd4BQ', action: 'STREAM' },
         Tidal:        { url: 'https://tidal.com/album/488896851', action: 'STREAM' },
         Pandora:      { url: 'https://www.pandora.com/artist/zeke-pujols-and-durdnn/cant-be-alone/cant-be-alone/TRzqfPwc4jfbr6Z?part=ug-desktop&corr=139728138828541187', action: 'STREAM' },
@@ -205,40 +217,21 @@
     }
   };
 
-  /* ─── PLATFORM ICONS ─── */
-  /* Tile spec: 36×36px, 8px radius, brand-color bg, white glyph at ~55-60% scale (22×22px) */
-  /* Brand colors: Spotify #1DB954 · SoundCloud #FF5500 · Deezer #A238FF · Amazon #25D1DA · iHeart #C6002B */
-  /* Apple Music, iTunes, Tidal kept as-is (already correct) */
+  /* ─── PLATFORM ICONS (Exact official SVG assets) ─── */
   var TILE = 'display:flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:8px;flex-shrink:0;';
-  var GLYPH_IMG = 'width:22px;height:22px;object-fit:contain;display:block;';
+  var GLYPH_IMG = 'width:22px;height:22px;object-fit:contain;display:block;filter:brightness(0) invert(1);';
 
   var ICONS = {
-    /* ── Spotify — local SVG, white glyph on #1DB954 ── */
-    'Spotify': '<span aria-label="Listen on Spotify" role="img" style="' + TILE + 'background:#1DB954;"><img src="/assets/platform-icons/spotify.svg" alt="Listen on Spotify" style="' + GLYPH_IMG + '"></span>',
-
-    /* Apple Music — unchanged ✅ */
-    'Apple Music': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Listen on Apple Music"><defs><linearGradient id="pm-am" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FC5C7D"/><stop offset="1" stop-color="#F9344A"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#pm-am)"/><path fill="#fff" d="M17 6.27V15.5a2.5 2.5 0 1 1-1.5-2.29V8.86L9 10.54v6.21a2.5 2.5 0 1 1-1.5-2.29V9.47a1 1 0 0 1 .72-.96l7.5-2.14A1 1 0 0 1 17 7.33z" opacity=".95"/></svg>',
-
-    /* iTunes — unchanged ✅ */
-    'iTunes': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Buy on iTunes"><defs><linearGradient id="pm-it" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E056D7"/><stop offset="1" stop-color="#B040C0"/></linearGradient></defs><rect width="24" height="24" rx="5" fill="url(#pm-it)"/><path fill="#fff" d="M17 6.27V15.5a2.5 2.5 0 1 1-1.5-2.29V8.86L9 10.54v6.21a2.5 2.5 0 1 1-1.5-2.29V9.47a1 1 0 0 1 .72-.96l7.5-2.14A1 1 0 0 1 17 7.33z" opacity=".95"/></svg>',
-
-    /* ── SoundCloud — local SVG, white glyph on #FF5500 ── */
-    'SoundCloud': '<span aria-label="Listen on SoundCloud" role="img" style="' + TILE + 'background:#FF5500;"><img src="/assets/platform-icons/soundcloud.svg" alt="Listen on SoundCloud" style="' + GLYPH_IMG + '"></span>',
-
-    /* ── Deezer — local SVG, white glyph on #A238FF ── */
-    'Deezer': '<span aria-label="Listen on Deezer" role="img" style="' + TILE + 'background:#A238FF;"><img src="/assets/platform-icons/deezer.svg" alt="Listen on Deezer" style="' + GLYPH_IMG + '"></span>',
-
-    /* Tidal — unchanged ✅ */
-    'Tidal': '<span aria-label="Listen on Tidal" role="img" style="' + TILE + 'background:#000;"><img src="/assets/platform-icons/tidal.png" alt="TIDAL" style="width:22px;height:22px;object-fit:contain;display:block;filter:invert(1);"></span>',
-
-    /* Pandora — blue P-shape logo */
-    'Pandora': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true"><rect width="24" height="24" rx="5" fill="#3668FF"/><path fill="#fff" d="M7 5h5.6C15.6 5 18 7.4 18 10.4s-2.4 5.4-5.4 5.4H10v3H7V5zm3 2.5v5.4h2.6c1.5 0 2.7-1.2 2.7-2.7s-1.2-2.7-2.7-2.7H10z"/></svg>',
-
-    /* ── Amazon Music — local SVG, white glyph on #25D1DA ── */
-    'Amazon Music': '<span aria-label="Listen on Amazon Music" role="img" style="' + TILE + 'background:#25D1DA;"><img src="/assets/platform-icons/amazon-music.svg" alt="Listen on Amazon Music" style="' + GLYPH_IMG + '"></span>',
-
-    /* ── iHeartRadio — local SVG, white glyph on #C6002B ── */
-    'iHeartRadio': '<span aria-label="Listen on iHeartRadio" role="img" style="' + TILE + 'background:#C6002B;"><img src="/assets/platform-icons/iheartradio.svg" alt="Listen on iHeartRadio" style="' + GLYPH_IMG + '"></span>'
+    'Amazon Music': '<span aria-label="Listen on Amazon Music" role="img" style="' + TILE + 'background:#25D1DA;"><img src="/assets/platform-icons/amazon-music.svg" alt="Amazon Music" style="' + GLYPH_IMG + '"></span>',
+    'Apple Music':  '<span aria-label="Listen on Apple Music" role="img" style="' + TILE + 'background:#F9344A;"><img src="/assets/platform-icons/applemusic.svg" alt="Apple Music" style="' + GLYPH_IMG + '"></span>',
+    'Deezer':       '<span aria-label="Listen on Deezer" role="img" style="' + TILE + 'background:#A238FF;"><img src="/assets/platform-icons/deezer.svg" alt="Deezer" style="' + GLYPH_IMG + '"></span>',
+    'iHeartRadio':  '<span aria-label="Listen on iHeartRadio" role="img" style="' + TILE + 'background:#C6002B;"><img src="/assets/platform-icons/iheartradio.svg" alt="iHeartRadio" style="' + GLYPH_IMG + '"></span>',
+    'iTunes':       '<span aria-label="Buy on iTunes" role="img" style="' + TILE + 'background:#B040C0;"><img src="/assets/platform-icons/itunes.svg" alt="iTunes" style="' + GLYPH_IMG + '"></span>',
+    'YouTube Music': '<span aria-label="Listen on YouTube Music" role="img" style="' + TILE + 'background:#FF0000;"><img src="/assets/platform-icons/youtube-music.svg" alt="YouTube Music" style="' + GLYPH_IMG + '"></span>',
+    'Pandora':      '<span aria-label="Listen on Pandora" role="img" style="' + TILE + 'background:#3668FF;"><img src="/assets/platform-icons/pandora.svg" alt="Pandora" style="' + GLYPH_IMG + '"></span>',
+    'SoundCloud':   '<span aria-label="Listen on SoundCloud" role="img" style="' + TILE + 'background:#FF5500;"><img src="/assets/platform-icons/soundcloud.svg" alt="SoundCloud" style="' + GLYPH_IMG + '"></span>',
+    'Spotify':      '<span aria-label="Listen on Spotify" role="img" style="' + TILE + 'background:#1DB954;"><img src="/assets/platform-icons/spotify.svg" alt="Spotify" style="' + GLYPH_IMG + '"></span>',
+    'Tidal':        '<span aria-label="Listen on TIDAL" role="img" style="' + TILE + 'background:#000000;"><img src="/assets/platform-icons/tidal.svg" alt="TIDAL" style="' + GLYPH_IMG + '"></span>'
   };
 
   /* ─── CSS INJECTION ─── */
@@ -446,7 +439,7 @@
     var list = document.getElementById('pm-list');
     list.innerHTML = '';
 
-    var platformOrder = ['Spotify', 'Apple Music', 'iTunes', 'SoundCloud', 'Deezer', 'Tidal', 'Pandora', 'Amazon Music', 'iHeartRadio'];
+    var platformOrder = ['Spotify', 'Apple Music', 'iTunes', 'YouTube Music', 'SoundCloud', 'Deezer', 'Tidal', 'Pandora', 'Amazon Music', 'iHeartRadio'];
     platformOrder.forEach(function(name) {
       var p = song.platforms[name];
       if (!p || !p.url) return;
