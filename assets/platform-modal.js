@@ -513,19 +513,18 @@
       var songId = titleToId[h2.textContent.trim()];
       if (!songId) return;
 
-      // Block all link clicks within this item and open modal instead
-      item.querySelectorAll('a').forEach(function(link) {
-        link.addEventListener('click', function(e) {
-          e.preventDefault();
-          openModal(songId);
-        });
-      });
+      function handleClick(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        openModal(songId);
+      }
 
-      // Also make the item itself keyboard-accessible as a button
       item.style.cursor = 'pointer';
-      item.addEventListener('click', function(e) {
-        // Only if click was directly on the item (not on a link already handled)
-        if (e.target === item) openModal(songId);
+      item.addEventListener('click', handleClick);
+
+      item.querySelectorAll('a, img, .music-cover-img, .music-title, .music-details, .music-link').forEach(function(el) {
+        el.style.cursor = 'pointer';
+        el.addEventListener('click', handleClick);
       });
     });
 
