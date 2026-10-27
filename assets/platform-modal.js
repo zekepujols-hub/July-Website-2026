@@ -4,6 +4,21 @@
 
   /* ─── MUSIC DATA (from Website Music Links - Sheet1.csv) ─── */
   var MUSIC = {
+    'aqui-sigo': {
+      id: 'aqui-sigo',
+      title: 'Aquí Sigo',
+      type: 'EP',
+      img: '/assets/aqui-sigo-cover.jpg',
+      platforms: {
+        Spotify:       { url: 'https://open.spotify.com/album/0jQVCZW4sMZNA7usJIxdip', action: 'STREAM' },
+        'Apple Music': { url: 'https://music.apple.com/us/album/aqu%C3%AD-sigo-single/6827229692', action: 'STREAM' },
+        iTunes:        { url: 'https://music.apple.com/us/album/aqu%C3%AD-sigo-single/6827229692', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/playlist?list=OLAK5uy_kb5krmMUzmxsNd0UzzVgPW4Yg6X9yJzSM', action: 'STREAM' },
+        Deezer:        { url: 'https://www.deezer.com/album/1131135371', action: 'STREAM' },
+        Tidal:         { url: 'http://www.tidal.com/album/573287762', action: 'STREAM' },
+        'Amazon Music':{ url: 'https://music.amazon.com/albums/B0HPCS4PLT', action: 'STREAM' }
+      }
+    },
     'stay-up': {
       id: 'stay-up',
       title: 'Stay Up',
@@ -485,6 +500,8 @@
     // Intercept all music-item clicks on music.html
     // Map each .music-item to a song ID based on the h2 title
     var titleToId = {
+      'Aquí Sigo': 'aqui-sigo',
+      'Aqui Sigo': 'aqui-sigo',
       'Stay Up': 'stay-up',
       'Second Place': 'second-place',
       'Can I Bother You?': 'can-i-bother-you',
@@ -527,7 +544,7 @@
       if (a.href && a.href.indexOf('partiful.com') !== -1) return;
       a.addEventListener('click', function(e) {
         e.preventDefault();
-        openModal('stay-up');
+        openModal('aqui-sigo');
       });
     });
 
@@ -535,7 +552,7 @@
     document.querySelectorAll('.latest-release-section img.latest-cover').forEach(function(img) {
       img.style.cursor = 'pointer';
       img.addEventListener('click', function() {
-        openModal('stay-up');
+        openModal('aqui-sigo');
       });
     });
   }
