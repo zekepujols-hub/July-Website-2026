@@ -444,6 +444,13 @@
 
     buildModal();
 
+    if (window.trackMeta) {
+      window.trackMeta('OpenStreamModal', {
+        song: song.title,
+        type: song.type
+      }, false);
+    }
+
     // Populate header
     document.getElementById('pm-thumb').src = song.img;
     document.getElementById('pm-thumb').alt = song.title + ' artwork';
@@ -465,6 +472,17 @@
       a.target = '_blank';
       a.rel = 'noopener noreferrer';
       a.setAttribute('aria-label', name + ' — ' + p.action);
+
+      a.addEventListener('click', function() {
+        if (window.trackMeta) {
+          window.trackMeta('StreamClick', {
+            platform: name,
+            song: song.title,
+            action: p.action,
+            url: p.url
+          }, false);
+        }
+      });
 
       var iconSvg = ICONS[name] || '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="6" fill="#333"/></svg>';
 

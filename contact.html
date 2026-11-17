@@ -27,8 +27,20 @@
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '2967935380226078');
-    fbq('track', 'PageView');
+    var tc = null;
+    try {
+      var p = new URLSearchParams(window.location.search);
+      tc = p.get('test_event_code') || p.get('fb_test_events');
+      if (tc) sessionStorage.setItem('meta_test_code', tc);
+      else tc = sessionStorage.getItem('meta_test_code');
+    } catch(e) {}
+    if (tc) {
+      fbq('track', 'PageView', {}, { test_event_code: tc });
+    } else {
+      fbq('track', 'PageView');
+    }
   </script>
+  <script defer src="/assets/meta-events.js"></script>
   <!-- End Meta Pixel Code -->
 </head>
 <body>
