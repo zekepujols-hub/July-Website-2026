@@ -33,6 +33,7 @@
 
   function getTabName() {
     var p = window.location.pathname.toLowerCase();
+    if (p.indexOf('second-place') !== -1) return 'Ad: Second Place';
     if (p.indexOf('music') !== -1) return 'Music';
     if (p.indexOf('videos') !== -1) return 'Videos';
     if (p.indexOf('tour') !== -1) return 'Live Shows';

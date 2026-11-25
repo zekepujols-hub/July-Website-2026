@@ -1,4 +1,6 @@
 User-agent: *
+Disallow: /second-place.html
+Disallow: /second-place
 Allow: /
 
 Sitemap: https://zekepujols.com/sitemap.xml

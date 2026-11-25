@@ -53,6 +53,23 @@
         iHeartRadio:  { url: 'https://www.iheart.com/artist/zeke-pujols-40700381/albums/second-place-418667258', action: 'STREAM' }
       }
     },
+    'touch': {
+      id: 'touch',
+      title: 'Touch',
+      artist: '7latenights feat. Zeke Pujols',
+      type: 'Single',
+      img: '/assets/touch-cover.jpg',
+      platforms: {
+        Spotify:       { url: 'https://open.spotify.com/album/0adQCUppqztPerRnpQHs2d', action: 'STREAM' },
+        'Apple Music': { url: 'https://music.apple.com/us/album/touch/6831085970?i=6831085973', action: 'STREAM' },
+        iTunes:        { url: 'https://music.apple.com/us/album/touch/6831085970?i=6831085973', action: 'BUY' },
+        'YouTube Music': { url: 'https://music.youtube.com/watch?v=XPrcSnmItRg', action: 'STREAM' },
+        Tidal:         { url: 'https://listen.tidal.com/track/576119398', action: 'STREAM' },
+        'Amazon Music':{ url: 'https://music.amazon.com/albums/B0HQGHRZBG?trackAsin=B0HQGNKKYM', action: 'STREAM' },
+        Deezer:        { url: 'https://www.deezer.com/track/4428264651', action: 'STREAM' },
+        Pandora:       { url: 'https://www.pandora.com/TR:216471878', action: 'STREAM' }
+      }
+    },
     'can-i-bother-you': {
       id: 'can-i-bother-you',
       title: 'Can I Bother You?',
@@ -456,6 +473,10 @@
     document.getElementById('pm-thumb').alt = song.title + ' artwork';
     document.getElementById('pm-type').textContent = song.type;
     document.getElementById('pm-title').textContent = song.title;
+    var artistEl = document.querySelector('.pm-artist');
+    if (artistEl) {
+      artistEl.textContent = song.artist || 'Zeke Pujols';
+    }
 
     // Populate platform rows
     var list = document.getElementById('pm-list');
@@ -522,6 +543,8 @@
       'Aqui Sigo': 'aqui-sigo',
       'Stay Up': 'stay-up',
       'Second Place': 'second-place',
+      'Touch': 'touch',
+      'TOUCH': 'touch',
       'Can I Bother You?': 'can-i-bother-you',
       'Who Can Blame Her': 'who-can-blame-her',
       'Every Night': 'every-night',
@@ -531,9 +554,10 @@
       'Ella Calcula / Si Te Vas': 'ella-calcula',
       'Do No Wrong': 'do-no-wrong',
       'Came From LA': 'came-from-la',
-      "Can't Be Alone": 'cant-be-alone',
-      'Second Place': 'second-place'
+      "Can't Be Alone": 'cant-be-alone'
     };
+
+    window.openMusicModal = openModal;
 
     document.querySelectorAll('.music-item').forEach(function(item) {
       var h2 = item.querySelector('h2.music-title');
