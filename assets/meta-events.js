@@ -48,27 +48,98 @@
 
   function init() {
     var currentTab = getTabName();
+    var testCode = getTestCode();
 
-    // 1. Fire clear TabView event with tab name
+    // 1. Preserve test_event_code across internal navigation links during testing
+    if (testCode) {
+      document.querySelectorAll('a[href]').forEach(function(a) {
+        var href = a.getAttribute('href');
+        if (!href) return;
+        if (href.startsWith('#') || href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) return;
+        if (href.indexOf('http') === 0 && href.indexOf(window.location.hostname) === -1) return; // external link
+        if (href.indexOf('test_event_code') !== -1) return; // already has it
+
+        var sep = href.indexOf('?') === -1 ? '?' : '&';
+        a.setAttribute('href', href + sep + 'test_event_code=' + encodeURIComponent(testCode));
+      });
+    }
+
+    // 2. Fire clear TabView event with tab name and exact URL
     window.trackMeta('TabView', {
       tab: currentTab,
       url: window.location.href
     }, false);
 
-    // 2. Track Navigation Tab Clicks
-    document.querySelectorAll('.nav-bar a, .masthead a').forEach(function(link) {
-      link.addEventListener('click', function() {
+    // 3. Track Navigation Tab Clicks with small delay to ensure delivery before unload
+    document.querySelectorAll('.nav-bar a, .masthead a, .footer-links a').forEach(function(link) {
+      link.addEventListener('click', function(e) {
         var label = (link.textContent || '').trim();
-        if (label) {
+        var href = link.getAttribute('href');
+        if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+        if (link.target === '_blank') return;
+
+        if (label && window.trackMeta) {
+          e.preventDefault();
           window.trackMeta('NavigationClick', {
             tab: label,
-            destination: link.getAttribute('href')
+            destination: href
           }, false);
+          setTimeout(function() {
+            window.location.href = href;
+          }, 120);
         }
       });
     });
 
-    // 3. Track Real Newsletter Form Submissions
+    // 4. Track Subscribe / Updates Popup ("Stay Updated") open & close on Home Page
+    var signupDialog = document.querySelector('#signup-dialog');
+    if (signupDialog) {
+      var isSubmitted = false;
+      var lastClosedTime = 0;
+
+      // Track if form was actually submitted
+      var signupForm = signupDialog.querySelector('form.signup-form');
+      if (signupForm) {
+        signupForm.addEventListener('submit', function() {
+          isSubmitted = true;
+        });
+      }
+
+      function handlePopupDismiss(reason) {
+        var now = Date.now();
+        if (now - lastClosedTime < 500) return; // debounce
+        lastClosedTime = now;
+        if (!isSubmitted) {
+          window.trackMeta('CloseSubscribePopup', {
+            modal: 'Stay Updated',
+            page: currentTab,
+            trigger: reason || 'close'
+          }, false);
+        }
+      }
+
+      // Close button (X)
+      var closeBtn = signupDialog.querySelector('[data-dialog-close], .dialog-close');
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function() {
+          handlePopupDismiss('close_button');
+        });
+      }
+
+      // Dialog native close event (Escape key or programmatic close)
+      signupDialog.addEventListener('close', function() {
+        handlePopupDismiss('dialog_close');
+      });
+
+      // Dialog backdrop click
+      signupDialog.addEventListener('click', function(e) {
+        if (e.target === signupDialog) {
+          handlePopupDismiss('backdrop_click');
+        }
+      });
+    }
+
+    // 5. Track Real Newsletter Form Submissions
     document.querySelectorAll('form.signup-form').forEach(function(form) {
       form.addEventListener('submit', function() {
         var honeypot = form.querySelector('input[name^="hp"]');
@@ -80,7 +151,7 @@
       });
     });
 
-    // 4. Track General Outbound / Social clicks (Instagram, Spotify, etc.) outside of modals
+    // 6. Track General Outbound / Social clicks (Instagram, Spotify, etc.) outside of modals
     document.addEventListener('click', function(e) {
       var link = e.target.closest('a');
       if (!link || !link.href) return;

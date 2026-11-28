@@ -23,6 +23,7 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('set', 'autoConfig', false, '2967935380226078');
     fbq('init', '2967935380226078');
     var tc = null;
     try {
@@ -32,9 +33,9 @@
       else tc = sessionStorage.getItem('meta_test_code');
     } catch(e) {}
     if (tc) {
-      fbq('track', 'PageView', {}, { test_event_code: tc });
+      fbq('track', 'PageView', { tab: 'Shop', page_name: 'Shop' }, { test_event_code: tc });
     } else {
-      fbq('track', 'PageView');
+      fbq('track', 'PageView', { tab: 'Shop', page_name: 'Shop' });
     }
   </script>
   <script defer src="/assets/meta-events.js"></script>

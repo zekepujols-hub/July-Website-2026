@@ -42,14 +42,14 @@
         else tc = sessionStorage.getItem('meta_test_code');
       } catch(e) {}
       if (tc) {
-        fbq('track', 'PageView', {}, { test_event_code: tc });
+        fbq('track', 'PageView', { tab: 'Second Place', page_name: 'Ad: Second Place' }, { test_event_code: tc });
         fbq('track', 'ViewContent', {
           content_name: 'Second Place',
           content_category: 'Music',
           content_type: 'single'
         }, { test_event_code: tc });
       } else {
-        fbq('track', 'PageView');
+        fbq('track', 'PageView', { tab: 'Second Place', page_name: 'Ad: Second Place' });
         fbq('track', 'ViewContent', {
           content_name: 'Second Place',
           content_category: 'Music',

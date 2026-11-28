@@ -34,9 +34,9 @@
       else tc = sessionStorage.getItem('meta_test_code');
     } catch(e) {}
     if (tc) {
-      fbq('track', 'PageView', {}, { test_event_code: tc });
+      fbq('track', 'PageView', { tab: 'Music', page_name: 'Music' }, { test_event_code: tc });
     } else {
-      fbq('track', 'PageView');
+      fbq('track', 'PageView', { tab: 'Music', page_name: 'Music' });
     }
   </script>
   <script defer src="/assets/meta-events.js"></script>
